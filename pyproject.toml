@@ -1,0 +1,29 @@
+[project]
+name = "research-mind-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Asrithchowdary", email = "127644464+Asrithchowdary@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "crewai>=1.15.21",
+    "crewai-tools>=1.15.21",
+    "fastapi>=0.141.1",
+    "jsonpatch>=1.33",
+    "langchain-core>=1.6.3",
+    "langchain-ollama>=1.1.0",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "tavily-python>=0.8.3",
+    "uvicorn>=0.53.0",
+]
+
+[project.scripts]
+research-mind-agent = "research_mind_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
